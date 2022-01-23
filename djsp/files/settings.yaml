@@ -1,0 +1,8 @@
+---
+default:
+  ALLOWED_HOSTS:
+    - "*"
+
+production:
+  ALLOWED_HOSTS:
+    - "server.prod.com"

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "{{ proj }}"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+Django = "3.2.11"
+python = "^3.9"
+{%- if dyna %}
+dynaconf = "^3.1.7"
+python-dotenv = "^0.19.2"
+{%- endif %}
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+django-extensions = "^3.1.5"
+flake8 = "^4.0.1"
+ipdb = "^0.13.9"
+pytest = "^6.2.5"
+django-pytest = "^0.2.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
