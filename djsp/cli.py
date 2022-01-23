@@ -1,6 +1,6 @@
 import click
 
-from project_builder import ProjectBuilder
+from .project_builder import ProjectBuilder
 
 
 @click.command()
